@@ -9,7 +9,7 @@
 }
 
 header{
-background:black;
+background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
 width: 100%;
 display: flex;
 justify-content: space-between;
@@ -17,7 +17,7 @@ align-items: center;
 height: 90px;
 padding: 0px 30px 0px 30px;
 position: fixed;
-top: 0%;
+top: 0;
 }
 
 .logo{
@@ -44,24 +44,26 @@ top: 0%;
 }
 
 .navbar-list a{
-    color:rgba(255, 255, 255, 0.351);
+    color:rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 600;
 }
 
 .navbar-list li:first-child > a{
+    font-size: 16px;
     font-weight: 600;
-    color:rgb(255, 255, 255);
+    color:#ff0000bc
 }
 
 
 main{
-    background: linear-gradient(to right,#ffefba,#ffffff) ;
+    background:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    
 }
 
 #hero{
@@ -100,7 +102,7 @@ main{
 
 .hero-info a{
     color: black;
-    background:white;
+    background:#1c92d2;
     width: 140px;
     padding: 8px 0px;
     border-radius: 10px;
@@ -116,6 +118,7 @@ main{
     padding:20px;
     border-radius: 15px;
     display: flex;
+    flex-direction: row;
     gap:20px;
     justify-content: center;
    
@@ -123,47 +126,191 @@ main{
 
 .hero-img img{
     width: 150%;
-    display: flex;
-    align-items:center;
-    justify-content: center;
     border-radius: 15px;
+   
+  
+}
+
+#informacion{
+    padding: 40px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-color:lavender;
+    border-radius: 40px;
+    
     
 }
-#info-p{
-    margin-top: 65px;
+.info{
+    display: flex;
+    gap: 20px;
+    width: 700px;
+    padding: 16px 0px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+#informacion h2{
+    font-size: 30px;
+    font-weight: 400;
+    
+}   
+
+
+.info p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+
+      
+}
+
+
+#cards{
+    padding: 40px 30px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; ;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
+    
+}
+
+#cards h2{
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start ;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards-container h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.contenido{
+    width: 300px;
+    height: 400px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #1c92d2;
+    border-radius: 40px;
+    gap: 10px;
+    
+}
+
+.contenido h3{
+    font-size: 14;
+    font-weight: 600;
+}
+
+
+.contenido img{
+    width: 80%;
+    border-radius: 60px;
+
+}
+
+#contactos{
     padding: 70px 0px;
     max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+
 }
-.info{
+
+.contenedor-contacs{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items:center ;
     gap: 20px;
+    width: 600px;
+    height:500px;
+    color: rgb(0, 0, 0);
+    
+    
+}
+
+.info-contacs{
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    background-color:#1c92d2;
+    border-radius: 15px;
+  
+    
+}
+
+
+.info-contacs img{
+    width: 50px;
+
+}
+
+.mapa{
+    width: 50%;
+}
+.mapa iframe{
     width: 100%;
+    
+
+}
+
+footer{
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    gap: 40px;
+    padding: 60px 0px;
+
 }
 
-.info h2{
-    font-size: 20px;
-    width: 2%;
-    min-width: 250px;
-    color:rgb(0, 0, 0);
-    font-weight: 500;
-}   
+footer a, footer p{
+    color: antiquewhite;
+    font-weight: 300;
+    font-size: 15px;
 
-.info p{
-    font-size: 16px;
-    width: 70%;
-    color:rgb(0, 0, 0);
-    text-align: center;
-      
 }
 
-span{
-    font-weight: 800;
+footer span{
+    font-size: 15px;
+    font-weight: 900;
 }
 
+.footer-link{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#menu-toggle{
+    display: none;
+
+}
+
+.menu-label{
+    display: none;
+}
