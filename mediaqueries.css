@@ -64,11 +64,13 @@
 
     }
     .hero-img {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
     }
     #informacion {
-        margin-top: 65px;
-
+        margin-top: 55px;
+        padding: 40px;
+        height: 60%;
         text-align: center;
         width: 100%;
         
@@ -96,7 +98,8 @@
        
     }
     .mapa iframe {
-        display: none;
+        display:flex;
+        flex-wrap: wrap;
     }
 }
 @media (max-width:576px) { 
@@ -104,6 +107,7 @@
     .hero-info p{
         height: 50%;
         font-size: 16px;
+        padding: 10px;
     }
  
     #informacion {
@@ -124,4 +128,18 @@
         
     }
 
+}
+@media (max-width:313px) {
+    .hero-info{
+        height: 100vh;
+        width: 100vw;
+        
+    }
+    .hero-info p{
+        padding: 10px;
+    }
+    footer{
+      max-width: 372;
+
+    }
 }
